@@ -1,7 +1,7 @@
 # DaciaClock v16 — what the installed APK actually does
 
-Decompiled from `duster/DaciaClock.apk` (versionCode 16, package
-`ma.aymane.daciaclock`). Approximate Java is in `../decompiled/`. The original
+Decompiled from `apk/clock-auto-3min.apk` (versionCode 16, package
+`ma.aymane.daciaclock`). Approximate Java is in `decompiled-v16/`. The original
 source is NOT in the repo — only the APK.
 
 ## Components

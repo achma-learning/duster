@@ -22,8 +22,8 @@ Undo: adb shell pm enable <package>
 - Undo: force-stop net.osmand.plus, push the backup files back to /data/data/net.osmand.plus/shared_prefs/ (owner u0_a72, mode 660), delete net.osmand.settings.car.xml
 
 ## 2026-11-08 03:07 — Dacia Clock v16 -> v17 (new signing key)
-- v16 uninstalled, duster/DaciaClock-v17.apk installed; appops GET_USAGE_STATS allow
-- Undo: adb uninstall ma.aymane.daciaclock; adb install duster/clock-auto-3min.apk
+- v16 uninstalled, DaciaClock-v17.apk (now apps/dacia-clock/apk/) installed; appops GET_USAGE_STATS allow
+- Undo: adb uninstall ma.aymane.daciaclock; adb install apps/dacia-clock/apk/clock-auto-3min.apk
 
 ## 2026-11-08 03:43 — animations 0.5x
 - before: window_animation_scale=1.0 transition_animation_scale=1.0 animator_duration_scale=1.0

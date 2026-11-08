@@ -75,7 +75,7 @@ inutilisable en conduite réelle.
 - **EVS** (External View System, caméra de recul AOSP) : Android 8+ / Automotive
   uniquement. **N'existe pas ici.** Toute suggestion allant dans ce sens est à
   rejeter.
-- Android Auto : hors de portée.
+- Android Auto : ~~hors de portée~~ **fonctionne** depuis 2026-11-08 via le récepteur Open Headunit (mode « Headunit Server », sans Bluetooth) — voir `HEADUNIT-INTEL.md` §5.
 
 ---
 
@@ -156,6 +156,10 @@ diff avant.txt pendant.txt
 Lire ensuite via réflexion sur `android.os.SystemProperties`. Candidates :
 `persist.sys.reverse`, `sys.backcar`, `persist.sys.backcar`, `sys.reverse.state`.
 
+> **Mise à jour 2026-11-08 :** sur cet appareil, aucune de ces propriétés n'existe. Le recul arrive du MCU →
+> `Settings.System mcu_backcar_state`, broadcast `com.android.action.ACTION_BACKCAR_STATE_CHANGE` (extra **byte**
+> `extra_back_state`) et nœud `/sys/devices/soc.0/car_reverse.14/state`. Voir `rom-analysis/backcar.md`.
+
 ### Launcher
 
 Le launcher d'origine porte la radio, le Bluetooth et l'intégration CANbox.
@@ -205,4 +209,7 @@ Pas de pile RTC : activer la **synchronisation GPS de l'heure**.
 | OsmAnd | ✅ jusqu'à 4.7.10 |
 | Organic Maps | ❌ exige OpenGL ES 3.0 / Vulkan |
 | Google Maps Go / Google Maps / Waze | ❌ |
-| F-Droid | ✅ (installer d'abord ISRG Root X1, dépôt « Archive ») |
+| F-Droid | ✅ 1.23.2 max (2.x exige API 24) ; installer d'abord ISRG Root X1, dépôt « Archive » — désinstallé le 2026-11-08 à la demande du propriétaire |
+| VLC | ✅ 3.7.2 (build armeabi-v7a) |
+| AndrOBD | ✅ 2.7.10 |
+| Open Headunit (récepteur Android Auto) | ✅ 3.5.0 |

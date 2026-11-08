@@ -1,24 +1,26 @@
 # Duster head unit workspace
 
-You are working on a **live car head unit** reachable over ADB/Wi-Fi from this laptop
-(Fedora, `android-tools`). Owner: Mohamed-Aymane. The car is a 2016 Dacia Duster
+You are working on a **live car head unit** reachable over ADB/Wi-Fi from the owner's laptop
+(Windows + Git Bash since 2026-11-08; Fedora also works). Owner: Mohamed-Aymane. The car is a 2016 Dacia Duster
 mk1 phase 2, 1.5 dCi. Reply in the language the user writes in.
 
 @docs/DEVICE-PROFILE.md
-@docs/DACIACLOCK-V16-ANALYSIS.md
+@docs/HEADUNIT-INTEL.md
 
 ## Layout
 
-- `duster/` — git repo github.com/achma-learning/duster (APKs, manuals, logos, wallpapers). Commit fixes here.
-- `decompiled/` — androguard decompilation of `DaciaClock.apk` v16 + its `clock.html`. Approximate; use as the base for a rebuild.
+(Repo layout since 2026-11-08 — this folder is `headunit/` in github.com/achma-learning/duster; read `../CONTEXT.md` first.)
+- `docs/` — `HEADUNIT-INTEL.md` (start here), `DEVICE-PROFILE.md`, `CHANGES-ON-UNIT.md` (every change + undo), `FIX-REVERSE.md`, `rom-analysis/`.
 - `scripts/` — `diag.sh` (read-only snapshot), `acc-cycle.sh`, `reverse-props.sh`, `set-idle.sh`. All take the unit IP as 1st arg (saved to `.hu-ip`).
-- `diag/` — outputs. Read them instead of re-running commands.
+- `tools/` — `apkcheck.py`, `axmldump.py`, `oat2dex.py`.
+- `rom-dump/` — vendor APK/ODEX pulled from the unit; `diag/` — outputs/logs. Read them instead of re-running commands.
+- Dacia Clock lives in `../apps/dacia-clock/` (`source/`, `apk/`, `keys/`, `decompiled-v16/`).
 
-## Current goal
+## Current goal (updated 2026-11-08)
 
-1. DaciaClock (`ma.aymane.daciaclock`) must reopen automatically after **60 s** without touch, every drive, after any ignition cycle.
-2. Never while reverse gear is engaged; the stock launcher stays HOME; HOME always returns to it.
-3. Order: `diag.sh` → `set-idle.sh <ip> 60` → test → `acc-cycle.sh` → `reverse-props.sh` → only then decide whether a v17 rebuild is needed (see analysis doc).
+1. Done: Dacia Clock v17.1 — opens after 180 s idle only over the home screen, tap to leave, opens at ignition-on via the ROM navigation-app setting, reverse-aware.
+2. Now: reverse camera never triggers — see `docs/FIX-REVERSE.md` (likely the reverse wire; test with engine running).
+3. Next: read-only exploration E1–E15 (`TODO.md`), results into `docs/HEADUNIT-INTEL.md` + `docs/rom-analysis/`.
 
 ## Rules on the device
 
@@ -35,4 +37,4 @@ mk1 phase 2, 1.5 dCi. Reply in the language the user writes in.
 Toolchain without Gradle (see device profile §4): `aapt` → `javac -source 8 -target 8` → `d8`/`dx` → `zipalign` → `apksigner`.
 On Fedora: `sudo dnf install android-tools java-17-openjdk-devel` and get the Android build-tools + `platforms;android-23` via `sdkmanager` (cmdline-tools) if `aapt`/`d8` are missing.
 minSdk 21 / targetSdk 22, Java 8, no AndroidX, `armeabi-v7a` only. Verify with `apksigner verify --min-sdk-version 21`.
-The original signing key is not in this folder: if the user doesn't have `dacia.jks`, a new key requires uninstalling the old app first — ask before doing it.
+Dacia Clock v17+ is signed with `../apps/dacia-clock/keys/dacia-v17.jks` (alias `dacia`, password in `dacia-v17.pass`) — `../apps/dacia-clock/source/build.sh` uses it. The v16 key is lost.

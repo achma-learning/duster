@@ -18,7 +18,7 @@ Deep dives: `docs/rom-analysis/{backcar,can,mcu-protocol,process-rules,signing}.
    (`com.nwd.backcar`), MCU/kernel (`com.nwd.kernel`, `com.nwd.setting.service`), SystemUI, Settings, WebView.
 2. **Never write `/system`** (it is reachable as root — do not). Never flash. No cross-branch firmware (K2001N/Q bootloop).
 3. **Read-only freely; ask the owner before** any `settings put`, `setprop`, `pm disable/uninstall/clear`, `appops set`,
-   file write/delete, install, reboot. Log every change + its undo in `diag/debloat-log.md`.
+   file write/delete, install, reboot. Log every change + its undo in `headunit/docs/CHANGES-ON-UNIT.md`.
 4. **Reverse camera is safety-critical.** Never draw persistent overlays; never write a camera app; reverse tests only
    parked + handbrake, owner performs the physical action.
 5. **Prefer reversible mechanisms**: `pm disable` (undo `pm enable`) over uninstall; settings with recorded old value.
@@ -118,7 +118,7 @@ NAVI 11, PHONE 10). Heartbeat seen in logs `F005000200000007` = ARM volume repor
   (likely framework.jar `NwdTaskWhitelist`).
 - `kill_background_services=1` (Allwinner): only force-stops packages listed in `kill_background_services_list` under low memory.
 
-### 3.4 Reverse camera `[STATIC]+[LIVE]` (backcar.md, fix-reverse.md)
+### 3.4 Reverse camera `[STATIC]+[LIVE]` (backcar.md, FIX-REVERSE.md)
 - Source of truth: **MCU frame 0/5** → `DeviceState.saveBackCarState()` → `Settings.System mcu_backcar_state` +
   broadcast `com.android.action.ACTION_BACKCAR_STATE_CHANGE` (**byte** `extra_back_state`; suppressed while ACC off unless 0).
 - `com.nwd.backcar` shows a **WindowManager overlay type 2033** ("TOP_LAYER_3", fullscreen, SurfaceView, `Camera.open(6)` CVBS),
@@ -146,13 +146,13 @@ No speed/RPM/gear/handbrake. No Duster-specific profile exists; current config i
 
 ---
 
-## 4. Current modifications (all logged with undo in `diag/debloat-log.md`) `[LIVE]`
+## 4. Current modifications (all logged with undo in `docs/CHANGES-ON-UNIT.md`) `[LIVE]`
 
 | Change | Undo |
 |---|---|
 | `pm disable` Google: gms, gsf, gsf.login, vending, configupdater, apps.mapslite (+≈77 MB RAM) | `pm enable <pkg>` |
 | `pm disable` com.bizhi.mogudongtai, com.android.musicvis, com.android.wallpaper.livepicker | `pm enable <pkg>` |
-| Dacia Clock **v17.1** (new key) replaces v16; `appops GET_USAGE_STATS allow` | reinstall `duster/clock-auto-3min.apk` (uninstall first) |
+| Dacia Clock **v17.1** (new key) replaces v16; `appops GET_USAGE_STATS allow` | reinstall `apps/dacia-clock/apk/clock-auto-3min.apk` (uninstall first) |
 | ROM: `navigation_packagename=ma.aymane.daciaclock` (+ class) → clock on every ignition-on; clock in Whitelist | set back via Car settings |
 | OsmAnd prefs: car profile, text 1.25, Weather/Wikipedia/Terrain plugins off | restore `diag/osmand-prefs-exact-*` |
 | Animations 0.5× (window/transition/animator) | set to 1.0 |
@@ -164,14 +164,14 @@ No speed/RPM/gear/handbrake. No Duster-specific profile exists; current config i
 
 ## 5. Verified recipes `[LIVE]`
 
-- **Dacia Clock v17.1** (source `daciaclock-src/`, `build.sh`): opens after 180 s idle **only when `com.android.launcher` is in front**
+- **Dacia Clock v17.1** (source `apps/dacia-clock/source/`, `build.sh`): opens after 180 s idle **only when `com.android.launcher` is in front**
   (UsageStats), tap → back, closes in reverse (`extra_back_state` / `mcu_backcar_state` / sysfs). After install/update: open
   `ma.aymane.daciaclock/.ClockActivity` once (clears "process is bad").
 - **Wireless Android Auto:** phone runs AA → dev settings → "Start head unit server"; Open Headunit **Wireless Mode = Headunit Server**
   (Native mode needs Bluetooth = impossible here) or `am start -a android.intent.action.VIEW -d "headunit://connect?ip=<PHONE_IP>"`.
   Result 720p30 HW-decoded, ~67 MB RAM, 11 % CPU. **Never probe port 5277 before connecting** (AA treats it as a car and hangs).
   AA first-run setup on the phone needs Speech Services + Google app installed/up to date.
-- **APK compatibility check:** minSdk ≤ 23, has `armeabi-v7a` or no native libs, GLES ≤ 2.0 (`scratchpad/tools/apkcheck.py` pattern).
+- **APK compatibility check:** minSdk ≤ 23, has `armeabi-v7a` or no native libs, GLES ≤ 2.0 (`headunit/tools/apkcheck.py`).
 - **Old F-Droid client for Android 6:** 1.23.2 (2.x needs API 24); OsmAnd ≤ 4.7.10 (`471001` = armeabi-v7a build).
 
 ---
@@ -209,6 +209,6 @@ No speed/RPM/gear/handbrake. No Duster-specific profile exists; current config i
 - `docs/HEADUNIT-INTEL.md` — this report · `docs/DEVICE-PROFILE.md` — hardware/WebView/app constraints (note: its "Android Auto
   out of reach" is superseded — AA works via Open Headunit receiver).
 - `docs/rom-analysis/backcar.md`, `can.md`, `mcu-protocol.md`, `process-rules.md`, `signing.md` — evidence-level deep dives.
-- `fix-reverse.md` — reverse camera plan · `TODO.md` — GitHub upload checklist · `diag/debloat-log.md` — every change + undo.
-- `daciaclock-src/` — Dacia Clock v17.1 source/build · `duster/DaciaClock-v17.apk`, `duster/clock-auto-3min.apk` (v16).
-- Decompiled ROM sources (temporary, laptop scratchpad): `scratchpad/rom-analysis/{backcar,can,mcu,process}/`; raw APKs `scratchpad/rom-pull/`.
+- `docs/FIX-REVERSE.md` — reverse camera plan · `TODO.md` — exploration plan + checklist · `docs/CHANGES-ON-UNIT.md` — every change + undo.
+- `../apps/dacia-clock/` — Dacia Clock: `source/` (v17.1 + build.sh), `apk/DaciaClock-v17.apk`, `apk/clock-auto-3min.apk` (v16), `keys/`.
+- Raw ROM pulls: `headunit/rom-dump/` (decompile with JADX/REA to regenerate sources) · device logs/snapshots: `headunit/diag/`.
