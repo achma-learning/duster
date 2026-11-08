@@ -25,7 +25,7 @@ Files, apps and know-how for a **2016 Dacia Duster** (mk1 phase 2, 1.5 dCi) and 
 - Reverse camera: [`headunit/docs/FIX-REVERSE.md`](headunit/docs/FIX-REVERSE.md) · to-do / exploration plan: [`headunit/TODO.md`](headunit/TODO.md)
 
 ## Car mods
-- Morocco-optimised mods guide (4x2, 1.5 dCi): [`car/mods-duster.md`](car/mods-duster.md)
+- Morocco-optimised mods guide (diesel 1.5 dCi, 4x2): [`car/mods-duster.md`](car/mods-duster.md)
 
 ## Downloads elsewhere
 - Manual APK mirror: https://archive.org/download/manuel-duster/Manuel%20Duster.apk
