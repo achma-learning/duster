@@ -15,7 +15,7 @@ Files, apps and know-how for a **2016 Dacia Duster** (mk1 phase 2, 1.5 dCi) and 
 | [`headunit/`](headunit/) | Everything about the head unit: intelligence report, ROM analysis, change log, reverse-camera notes, ADB scripts, tools, raw dumps/logs |
 | [`car/manuals/`](car/manuals/) | Official Duster owner's manuals (all generations) — source in [`car/manuals/readme.md`](car/manuals/readme.md) |
 | [`car/carlytics/`](car/carlytics/) | Vehicle history reports (Carlytics) |
-| [`car/mods-duster.md`](car/mods-duster.md) | Mods & upgrades guide for Morocco: maintenance, Michelin tyres, sump guard, lights, heat/dust/piste kit, dashcam, Temu buy/avoid list |
+| [`car/mods-duster.md`](car/mods-duster.md) | Mods & upgrades guide for Morocco: ROI priorities (maintenance, Michelin Primacy 4+ + alignment, head unit), diesel care, sump guard, lights, heat/dust/piste kit, dashcam, seats, Temu buy/avoid list |
 | [`assets/logo/`](assets/logo/) · [`assets/wallpaper/`](assets/wallpaper/) | Dacia / Renault / Duster logos, country flags, head-unit wallpapers |
 | [`docs/prompts/`](docs/prompts/) | Prompts used with AI assistants (e.g. the one that regenerates `CONTEXT.md`) |
 

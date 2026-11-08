@@ -7,6 +7,16 @@ Shopping assumption: **Temu** for cheap, non-safety accessories; local shops for
 > Items marked *(check)* were not verified for this exact car — confirm in the owner's manual
 > ([`manuals/`](manuals/)), the door-frame sticker, or by pulling the part before buying.
 
+> ### ⭐ Best value / ROI — spend here first
+> 1. **Maintenance** (§1.1–1.2): timing belt, fluids, filters, battery, diesel fuel filter. Cheapest way to avoid a
+>    ruined engine or a breakdown in the middle of nowhere.
+> 2. **Michelin Primacy 4+** (default choice, §1.3) **+ wheel alignment** at fitting: safer braking, less noise,
+>    even tyre wear, lower fuel use.
+> 3. **A good head unit — only if the car doesn't already have one** (§7.1): navigation, CarPlay/Android Auto, reverse
+>    camera. *This car already has one* — see [`../headunit/`](../headunit/).
+>
+> Everything else (seats, cosmetics, lifestyle) comes after these.
+
 ---
 
 ## Car facts that drive the choices
@@ -52,13 +62,15 @@ Shopping assumption: **Temu** for cheap, non-safety accessories; local shops for
 
 | Use | Model |
 |---|---|
-| City + highway, heat (most people) | **Michelin Primacy 4+** — heat-stable, quiet, good wet braking |
+| **⭐ Default — city + highway, heat** | **Michelin Primacy 4+** — heat-stable, quiet, good wet braking, long life |
 | Frequent Atlas winter / lots of rain | **Michelin CrossClimate 2 (SUV)** — 3PMSF snow mark |
 | Lots of pistes | **BFGoodrich All-Terrain KO2/KO3** (Michelin group) or **Michelin LTX Force** if available |
 
 - **DOT date < 1–2 years** (heat ages stored stock), load/speed index ≥ door sticker.
 - Check pressure **cold, in the morning**.
-- **Alignment** after fitting (potholes).
+- **Alignment (parallélisme) every time you fit tyres** — and after hitting a big pothole or if the wheel pulls.
+  Cheap, and protects the investment in Michelins.
+- Balancing at fitting; rotate front ↔ rear every ~10 000 km.
 
 ### 1.4 Metal sump guard
 Steel or 4–5 mm aluminium, Duster-specific, from a local fitter or known brand. Most important piste mod.
@@ -170,6 +182,30 @@ plates — keep clips for police/insurance.
 
 ## 7. Comfort & tech
 
+### 7.1 Head unit (⭐ high ROI — only if the car has none)
+This car **already has** an Android unit (Allwinner T3, see [`../headunit/`](../headunit/)) — skip unless it dies or
+you want an upgrade. If buying one:
+- **Real** specs: ≥ 4 GB RAM / 64 GB, 8-core, Android 12+ (fake-spec units claim 4 GB but have 1–2 GB — check reviews).
+- **Wireless CarPlay / Android Auto**, IPS or QLED 9″ screen, DSP audio, reverse-camera input.
+- **Duster 2010–2017 frame + CANbus / steering-wheel-control adapter** included.
+- Known brands (e.g. Teyes, Joying) > no-name. Temu possible but read reviews from Duster owners.
+
+### 7.2 Seats — better quality & cushioning
+Duster mk1 seats are thin and the driver's bolster/foam often collapses with age. Options by value:
+
+| Option | Notes | Where |
+|---|---|---|
+| **Re-foam + reupholster** (⭐ best value) | A Moroccan *tapissier / sellier* replaces the tired foam with denser foam, adds lumbar support, new breathable fabric. Keeps original rails and airbags. | Local upholsterer |
+| **Higher-trim Duster mk1 seats** (Prestige/Laureate: height adjust, better bolsters) | Same rails, bolts straight in. ⚠️ Seats with **side airbags** must have the connector plugged in, or the airbag light comes on and fails inspection | Casse (scrapyard) / used parts |
+| Memory-foam cushion + lumbar pillow | Cheap quick fix; choose breathable/mesh for summer | ✅ Temu |
+| **12 V ventilated seat cover** (fans) | Very useful in Moroccan heat | ✅ Temu (check plug fuse/amps) |
+| Aftermarket bucket / sport seats | ❌ Not recommended: rails, airbags, seat-belt sensors, homologation, worse for long trips | — |
+| Duster 2 / other-model seats | Possible but needs custom brackets & airbag wiring — garage job only | Specialist |
+
+Never buy seat frames, rails or belt parts on Temu.
+
+### 7.3 Other comfort mods
+
 | Mod | Notes | Where |
 |---|---|---|
 | Centre armrest | Classic Duster mk1 mod | ✅ Temu ("Dacia Duster armrest 2010–2017") |
@@ -204,11 +240,13 @@ Imports to Morocco may incur **customs duties** — check the final price.
 
 ## Priority order
 
-1. Maintenance: timing belt, coolant, AC, filters, quality battery
-2. Michelin Primacy 4+ (or CrossClimate 2 / BFG AT) + alignment
-3. Metal sump guard
-4. Sun shade, breathable seat covers, legal ceramic tint
-5. Dashcam (supercapacitor) + TPMS + compressor
-6. H4 halogen upgrade + headlight lens polish
-7. Mats, mud flaps, armrest, interior LED
-8. Piste kit (boards, shovel, water) if going south
+1. ⭐ **Maintenance**: timing belt, coolant, AC, filters, diesel fuel filter, quality battery
+2. ⭐ **Michelin Primacy 4+** (default) **+ alignment**
+3. ⭐ **Good head unit** — only if the car has none (this one has)
+4. Metal sump guard
+5. Sun shade, breathable seat covers, legal ceramic tint
+6. Dashcam (supercapacitor) + TPMS + compressor
+7. Seats: re-foam/reupholster or higher-trim seats
+8. H4 halogen upgrade + headlight lens polish
+9. Mats, mud flaps, armrest, interior LED
+10. Piste kit (boards, shovel, water) if going south
