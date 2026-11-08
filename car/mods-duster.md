@@ -1,6 +1,6 @@
 # Duster mods — Morocco edition
 
-Mods and upgrades for **this car**: 2016 Dacia Duster mk1 phase 2, **1.5 dCi (K9K), 4x2**, driven in **Morocco**
+Mods and upgrades for **this car**: 2016 Dacia Duster mk1 phase 2, **diesel 1.5 dCi (K9K), 4x2**, driven in **Morocco**
 (heat 45 °C+, dust/sand, coastal salt, Atlas snow, heavy rain episodes, pistes).
 Shopping assumption: **Temu** for cheap, non-safety accessories; local shops for everything safety-critical.
 
@@ -18,7 +18,7 @@ Shopping assumption: **Temu** for cheap, non-safety accessories; local shops for
 | Tyre size **215/65 R16** *(check door sticker)* | Michelin choices below |
 | Low plastic sump guard, ~200 mm clearance | Metal skid plate is essential on pistes |
 | **4x2** | Gravel/pistes fine with good tyres + guard; **avoid soft sand** |
-| 1.5 dCi K9K | Timing belt critical; EGR/DPF *(check if DPF fitted)* like regular highway runs |
+| **Diesel** 1.5 dCi K9K, turbo | Timing belt critical; fuel filter, glow plugs, EGR/DPF *(check if DPF fitted)*, turbo care — see §1.2 |
 
 ---
 
@@ -29,12 +29,26 @@ Shopping assumption: **Temu** for cheap, non-safety accessories; local shops for
 - **Coolant** (Renault Type D), clean radiator fins of dust/insects, check the fan.
 - **AC service**: regas (R134a), leak check.
 - **Battery**: heat kills batteries — quality **EFB/AGM** (Varta, Bosch, Exide), test every spring.
-- **Oil**: 5W-40 to Renault spec **RN0710**, or **RN0720 if DPF** *(check)*. Shorter intervals in dust/heat.
+- **Oil**: diesel 5W-40, see §1.2. Shorter intervals in dust/heat.
 - **Filters**: engine air filter checked every oil change; **carbon cabin filter** every 6–12 months.
 - Brakes: front pads/discs, rear drums, fluid.
-- dCi: regular highway drives to keep EGR/DPF clean; fill at major stations.
 
-### 1.2 Tyres — Michelin, 215/65 R16 (never from Temu)
+### 1.2 Diesel-specific (1.5 dCi)
+- **Fuel filter** with water separator: replace on schedule *(check manual, often ~30 000–60 000 km)* and
+  **drain water** at each service — the K9K common-rail injectors (Delphi/Continental) hate water and dirt.
+  Genuine or Mann/Bosch/Purflux only.
+- **Fuel**: fill at major stations (Afriquia, Shell, TotalEnergies…), avoid small rural pumps and jerrycan fuel.
+  Never run the tank to empty (pulls sediment, air in the system).
+- **Glow plugs**: check before winter if you go to the Atlas (hard cold starts, white smoke = suspect).
+- **EGR / DPF** *(check if DPF fitted)*: city-only use clogs them — do a 20–30 min highway run every week or two.
+  Don't remove/delete them (illegal, fails inspection). An occasional quality diesel cleaner (Liqui Moly, Wynn's) is OK.
+- **Turbo care**: let it idle 30–60 s before switching off after highway, pistes or climbs in summer heat;
+  don't rev hard when cold. Oil to spec matters most for the turbo.
+- **Oil**: diesel spec **RN0710**, or **RN0720 if DPF** *(check)*, 5W-40. Change on time — diesel oil gets sooty.
+- Watch for: smoke, loss of power ("limp mode"), injector rattle, oil leaks at the turbo hoses.
+- No AdBlue on this generation.
+
+### 1.3 Tyres — Michelin, 215/65 R16 (never from Temu)
 
 | Use | Model |
 |---|---|
@@ -46,10 +60,10 @@ Shopping assumption: **Temu** for cheap, non-safety accessories; local shops for
 - Check pressure **cold, in the morning**.
 - **Alignment** after fitting (potholes).
 
-### 1.3 Metal sump guard
+### 1.4 Metal sump guard
 Steel or 4–5 mm aluminium, Duster-specific, from a local fitter or known brand. Most important piste mod.
 
-### 1.4 Headlights — the honest LED answer
+### 1.5 Headlights — the honest LED answer
 1. **Polish yellowed lenses** first (biggest gain).
 2. **Upgraded H4 halogen**: Philips X-tremeVision / Racing Vision, Osram Night Breaker — legal, 5-minute swap.
 3. Branded LED with a fitment list (Philips Ultinon, Osram Night Breaker LED) — Duster mk1 often not listed, check.
@@ -57,7 +71,7 @@ Steel or 4–5 mm aluminium, Duster-specific, from a local fitter or known brand
 
 LED is fine for **fog, reverse, number plate and interior** bulbs.
 
-### 1.5 Safety kit in the car
+### 1.6 Safety kit in the car
 Triangle, extinguisher, first-aid kit, tyre gauge, 12 V compressor, tow strap (rated brand), 5–10 L water,
 full-size spare checked. Jump starter: known brand, and **not left in the car in summer**.
 
