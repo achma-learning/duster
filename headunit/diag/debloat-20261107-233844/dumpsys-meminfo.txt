@@ -1,0 +1,167 @@
+Applications Memory Usage (kB):
+Uptime: 360639738 Realtime: 5751975664
+
+Total PSS by process:
+    66766 kB: system (pid 2999)
+    44399 kB: com.google.android.gms.persistent (pid 21519)
+    35180 kB: com.android.settings (pid 23002 / activities)
+    33969 kB: com.nwd.volumeview (pid 8888)
+    32778 kB: com.google.android.gms (pid 7682)
+    25750 kB: com.android.systemui (pid 5103)
+    17499 kB: com.android.launcher (pid 6018)
+    16938 kB: com.android.inputmethod.latin (pid 7513)
+    11866 kB: net.easyconn (pid 31857)
+    10287 kB: logd (pid 1737)
+     9361 kB: com.nwd.can.setting (pid 29862)
+     8736 kB: android:ui (pid 1571)
+     7808 kB: com.nwd.kernel.setting (pid 5863)
+     7245 kB: com.nwd.media.scanner (pid 5872)
+     7207 kB: com.nwd.backcar (pid 5893)
+     6495 kB: com.android.phone (pid 5994)
+     5555 kB: com.nwd.radio.service (pid 6173)
+     5245 kB: com.nwd.android.onekeyclear (pid 8934)
+     5231 kB: com.bt.bc03 (pid 8432)
+     5204 kB: com.android.setting.gps.monitor (pid 8784)
+     4756 kB: com.nwd.android.phone (pid 7092)
+     4471 kB: com.nwd.systemmonitor (pid 5930)
+     4093 kB: com.bizhi.mogudongtai (pid 21503)
+     3467 kB: com.nwd.restore.memory.navi.gps.reboot (pid 5911)
+     3436 kB: mediaserver (pid 1787)
+     3014 kB: com.nwd.assistivetouch (pid 6887)
+     2739 kB: com.nwd.factory.copy.autoupdate (pid 5963)
+     2679 kB: zygote (pid 1779)
+     2472 kB: com.nwd.dvr.service (pid 7322)
+     2076 kB: surfaceflinger (pid 1778)
+     1777 kB: wpa_supplicant (pid 1582)
+     1473 kB: com.android.utils.sendkey (pid 5979)
+     1410 kB: com.nwd.gps.sync (pid 8311)
+     1349 kB: gocsdk (pid 31498)
+      987 kB: sdcard (pid 5552)
+      975 kB: com.nwd.android.tmpsservice (pid 7522)
+      669 kB: netd (pid 1784)
+      481 kB: dumpsys (pid 7012)
+      476 kB: adbd (pid 2515)
+      443 kB: top (pid 7073)
+      402 kB: /init (pid 1)
+      312 kB: healthd (pid 1770)
+      244 kB: busybox (pid 1736)
+      224 kB: ueventd (pid 1192)
+      219 kB: debuggerd (pid 1785)
+      195 kB: vold (pid 1750)
+      167 kB: usbmuxd (pid 6672)
+      122 kB: adb-ec (pid 6705)
+      118 kB: installd (pid 1788)
+      117 kB: drmserver (pid 1786)
+      110 kB: rild (pid 1806)
+      100 kB: keystore (pid 1792)
+       91 kB: gatekeeperd (pid 1799)
+       86 kB: servicemanager (pid 1775)
+       85 kB: gocsdk (pid 1795)
+       55 kB: lmkd (pid 1774)
+       11 kB: sleep (pid 1749)
+       10 kB: sh (pid 1771)
+       10 kB: tianetd (pid 1803)
+       10 kB: sh (pid 6658)
+       10 kB: sh (pid 6659)
+
+Total PSS by OOM adjustment:
+    27358 kB: Native
+               10287 kB: logd (pid 1737)
+                3436 kB: mediaserver (pid 1787)
+                2679 kB: zygote (pid 1779)
+                2076 kB: surfaceflinger (pid 1778)
+                1777 kB: wpa_supplicant (pid 1582)
+                1349 kB: gocsdk (pid 31498)
+                 987 kB: sdcard (pid 5552)
+                 669 kB: netd (pid 1784)
+                 481 kB: dumpsys (pid 7012)
+                 476 kB: adbd (pid 2515)
+                 443 kB: top (pid 7073)
+                 402 kB: /init (pid 1)
+                 312 kB: healthd (pid 1770)
+                 244 kB: busybox (pid 1736)
+                 224 kB: ueventd (pid 1192)
+                 219 kB: debuggerd (pid 1785)
+                 195 kB: vold (pid 1750)
+                 167 kB: usbmuxd (pid 6672)
+                 122 kB: adb-ec (pid 6705)
+                 118 kB: installd (pid 1788)
+                 117 kB: drmserver (pid 1786)
+                 110 kB: rild (pid 1806)
+                 100 kB: keystore (pid 1792)
+                  91 kB: gatekeeperd (pid 1799)
+                  86 kB: servicemanager (pid 1775)
+                  85 kB: gocsdk (pid 1795)
+                  55 kB: lmkd (pid 1774)
+                  11 kB: sleep (pid 1749)
+                  10 kB: sh (pid 1771)
+                  10 kB: tianetd (pid 1803)
+                  10 kB: sh (pid 6658)
+                  10 kB: sh (pid 6659)
+    66766 kB: System
+               66766 kB: system (pid 2999)
+    76016 kB: Persistent
+               25750 kB: com.android.systemui (pid 5103)
+                9361 kB: com.nwd.can.setting (pid 29862)
+                7808 kB: com.nwd.kernel.setting (pid 5863)
+                7245 kB: com.nwd.media.scanner (pid 5872)
+                7207 kB: com.nwd.backcar (pid 5893)
+                6495 kB: com.android.phone (pid 5994)
+                4471 kB: com.nwd.systemmonitor (pid 5930)
+                3467 kB: com.nwd.restore.memory.navi.gps.reboot (pid 5911)
+                2739 kB: com.nwd.factory.copy.autoupdate (pid 5963)
+                1473 kB: com.android.utils.sendkey (pid 5979)
+    35180 kB: Foreground
+               35180 kB: com.android.settings (pid 23002 / activities)
+    49630 kB: Visible
+               44399 kB: com.google.android.gms.persistent (pid 21519)
+                5231 kB: com.bt.bc03 (pid 8432)
+    16938 kB: Perceptible
+               16938 kB: com.android.inputmethod.latin (pid 7513)
+    36871 kB: A Services
+               32778 kB: com.google.android.gms (pid 7682)
+                4093 kB: com.bizhi.mogudongtai (pid 21503)
+    17499 kB: Home
+               17499 kB: com.android.launcher (pid 6018)
+    69221 kB: B Services
+               33969 kB: com.nwd.volumeview (pid 8888)
+               11866 kB: net.easyconn (pid 31857)
+                5555 kB: com.nwd.radio.service (pid 6173)
+                5204 kB: com.android.setting.gps.monitor (pid 8784)
+                4756 kB: com.nwd.android.phone (pid 7092)
+                3014 kB: com.nwd.assistivetouch (pid 6887)
+                2472 kB: com.nwd.dvr.service (pid 7322)
+                1410 kB: com.nwd.gps.sync (pid 8311)
+                 975 kB: com.nwd.android.tmpsservice (pid 7522)
+    13981 kB: Cached
+                8736 kB: android:ui (pid 1571)
+                5245 kB: com.nwd.android.onekeyclear (pid 8934)
+
+Total PSS by category:
+   169104 kB: Dalvik
+   106788 kB: Native
+    27319 kB: .art mmap
+    25888 kB: .dex mmap
+    20520 kB: .oat mmap
+    18483 kB: Dalvik Other
+    16425 kB: .so mmap
+     6848 kB: .apk mmap
+     6396 kB: Stack
+     4220 kB: Unknown
+     3488 kB: Ashmem
+     3372 kB: Other mmap
+      417 kB: .ttf mmap
+      192 kB: Other dev
+        0 kB: Cursor
+        0 kB: Gfx dev
+        0 kB: .jar mmap
+        0 kB: EGL mtrack
+        0 kB: GL mtrack
+        0 kB: Other mtrack
+
+Total RAM: 770320 kB (status critical)
+ Free RAM: 190229 kB (13981 cached pss + 110300 cached kernel + 65948 free)
+ Used RAM: 501219 kB (395479 used pss + 105740 kernel)
+ Lost RAM: 78872 kB
+     ZRAM: 32212 kB physical used for 169356 kB in swap (350204 kB total swap)
+   Tuning: 192 (large 384), oom 184320 kB, restore limit 61440 kB (high-end-gfx)

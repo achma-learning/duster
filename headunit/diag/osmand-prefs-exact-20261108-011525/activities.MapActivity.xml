@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="FIRST_TIME_APP_RUN" value="true" />
+    <string name="VERSION_INSTALLED">OsmAnd~ 4.7.10</string>
+    <int name="NUMBER_OF_STARTS" value="4" />
+    <int name="VERSION_INSTALLED_NUMBER" value="4701" />
+    <long name="FIRST_INSTALLED" value="1794095868366" />
+    <long name="UPDATE_TIME_MS" value="1794095868371" />
+</map>

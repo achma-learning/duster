@@ -1,0 +1,51 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        daa1236 ma.aymane.daciaclock/.ClockActivity
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.LOCKED_BOOT_COMPLETED:
+        eba6537 ma.aymane.daciaclock/.BootReceiver
+      android.intent.action.BOOT_COMPLETED:
+        eba6537 ma.aymane.daciaclock/.BootReceiver
+
+Service Resolver Table:
+  Non-Data Actions:
+      android.service.dreams.DreamService:
+        fbe0aa4 ma.aymane.daciaclock/.ClockDreamService
+
+Key Set Manager:
+  [ma.aymane.daciaclock]
+      Signing KeySets: 32
+
+Packages:
+  Package [ma.aymane.daciaclock] (a00b00d):
+    userId=10066
+    pkg=Package{efd1bc2 ma.aymane.daciaclock}
+    codePath=/data/app/ma.aymane.daciaclock-1
+    resourcePath=/data/app/ma.aymane.daciaclock-1
+    legacyNativeLibraryDir=/data/app/ma.aymane.daciaclock-1/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=15 targetSdk=22
+    versionName=15.0
+    splits=[base]
+    applicationInfo=ApplicationInfo{a461dd3 ma.aymane.daciaclock}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    dataDir=/data/user/0/ma.aymane.daciaclock
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2026-09-01 09:48:51
+    firstInstallTime=2026-09-01 09:48:52
+    lastUpdateTime=2026-09-01 09:48:52
+    signatures=PackageSignatures{1232d10 [885320e]}
+    installPermissionsFixed=true installStatus=1
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    requested permissions:
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.SYSTEM_ALERT_WINDOW
+    install permissions:
+      android.permission.SYSTEM_ALERT_WINDOW: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+    User 0:  installed=true hidden=false stopped=false notLaunched=false enabled=0
+      runtime permissions:

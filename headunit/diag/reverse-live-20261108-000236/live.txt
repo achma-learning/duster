@@ -1,0 +1,37 @@
+11-07 23:05:17.918 E/android_os_hardware(22493): nwd-wangtao reverse node /sys/devices/soc.0/car_reverse.14/state
+11-07 23:07:16.507 E/android_os_hardware( 4153): nwd-wangtao reverse node /sys/devices/soc.0/car_reverse.14/state
+11-07 23:07:18.462 E/android_os_hardware( 4378): nwd-wangtao reverse node /sys/devices/soc.0/car_reverse.14/state
+11-07 23:07:20.259 E/android_os_hardware( 4648): nwd-wangtao reverse node /sys/devices/soc.0/car_reverse.14/state
+11-07 23:07:21.955 E/android_os_hardware( 4868): nwd-wangtao reverse node /sys/devices/soc.0/car_reverse.14/state
+11-07 23:07:23.581 E/android_os_hardware( 5105): nwd-wangtao reverse node /sys/devices/soc.0/car_reverse.14/state
+11-07 23:07:25.656 E/android_os_hardware( 5370): nwd-wangtao reverse node /sys/devices/soc.0/car_reverse.14/state
+11-07 23:07:32.829 E/android_os_hardware( 6365): nwd-wangtao reverse node /sys/devices/soc.0/car_reverse.14/state
+11-07 23:07:55.992 E/android_os_hardware( 9242): nwd-wangtao reverse node /sys/devices/soc.0/car_reverse.14/state
+11-07 23:08:22.458 I/ActivityManager( 2999): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/com.android.launcher2.Launcher (has extras)} from uid 1000 on display 0
+11-07 23:08:40.086 I/ActivityManager( 2999): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.nwd.android.lock.screen.ui/.LockScreenActivity} from uid 10037 on display 0
+11-07 23:08:40.950 I/ActivityManager( 2999): Displayed com.nwd.android.lock.screen.ui/.LockScreenActivity: +823ms
+11-07 23:08:45.088 I/ActivityManager( 2999): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ma.aymane.daciaclock/.ClockActivity} from uid 10037 on display 0
+11-07 23:08:49.079 I/ActivityManager( 2999): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/com.android.launcher2.Launcher (has extras)} from uid 1000 on display 0
+11-07 23:09:10.636 I/ActivityManager( 2999): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.providers.downloads.ui/.DownloadList} from uid 10037 on display 0
+11-07 23:09:10.780 I/ActivityManager( 2999): START u0 {act=android.provider.action.MANAGE_ROOT dat=content://com.android.providers.downloads.documents/root/downloads cmp=com.android.documentsui/.DocumentsActivity} from uid 10002 on display 0
+11-07 23:09:11.036 D/nwdapp_DeviceState( 5863): origin backcar = 0,new backcar = 0
+11-07 23:09:11.093 D/nwdapp_BackcarManager( 5893): backcarState = 0
+11-07 23:09:11.116 D/nwdapp_BackcarManager( 5893): hideBackcar isBackcarShowing=false
+11-07 23:09:12.472 I/ActivityManager( 2999): Displayed com.android.documentsui/.DocumentsActivity: +1s631ms (total +1s813ms)
+11-07 23:10:42.227 I/ActivityManager( 2999): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/com.android.launcher2.Launcher (has extras)} from uid 1000 on display 0
+11-07 23:10:50.068 I/ActivityManager( 2999): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.nwd.radio/.home_horizontalActivity} from uid 10037 on display 0
+11-07 23:10:51.083 I/ActivityManager( 2999): Displayed com.nwd.radio/.home_horizontalActivity: +999ms
+11-07 23:10:52.299 D/nwdapp_DeviceState( 5863): origin backcar = 0,new backcar = 0
+11-07 23:10:52.307 D/nwdapp_BackcarManager( 5893): backcarState = 0
+11-07 23:10:52.308 D/nwdapp_BackcarManager( 5893): hideBackcar isBackcarShowing=false
+11-07 23:10:57.305 I/ActivityManager( 2999): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/com.android.launcher2.Launcher (has extras)} from uid 1000 on display 0
+11-07 23:11:03.192 I/ActivityManager( 2999): START u0 {act=com.android.systemui.recents.SHOW_RECENTS flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity} from uid 10007 on display 0
+11-07 23:11:05.623 D/nwdapp_DeviceState( 5863): origin backcar = 0,new backcar = 0
+11-07 23:11:05.630 D/nwdapp_BackcarManager( 5893): backcarState = 0
+11-07 23:11:05.632 D/nwdapp_BackcarManager( 5893): hideBackcar isBackcarShowing=false
+11-07 23:11:09.350 I/ActivityManager( 2999): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/com.android.launcher2.Launcher} from uid 10007 on display 0
+11-07 23:12:05.385 I/ActivityManager( 2999): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=org.schabi.newpipe/.MainActivity} from uid 10037 on display 0
+11-07 23:12:05.566 D/nwdapp_DeviceState( 5863): origin backcar = 0,new backcar = 0
+11-07 23:12:05.612 D/nwdapp_BackcarManager( 5893): backcarState = 0
+11-07 23:12:05.636 D/nwdapp_BackcarManager( 5893): hideBackcar isBackcarShowing=false
+11-07 23:12:10.525 I/ActivityManager( 2999): Displayed org.schabi.newpipe/.MainActivity: +5s110ms

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="itinerary_last_calculated_md5">e0ae9284d49c6dec13ecf0d4989150fd</string>
+    <boolean name="safe_mode" value="false" />
+    <string name="enabled_plugins">osmand.wikipedia,osmand.srtm.paid,osmand.weather</string>
+    <float name="last_known_map_lat" value="31.63102" />
+    <long name="user_android_id_expired_time" value="1802044679926" />
+    <int name="free_downloads_v3" value="1" />
+    <int name="external_storage_dir_type_V19" value="1" />
+    <boolean name="show_osmand_welcome_screen" value="false" />
+    <string name="application_mode">default</string>
+    <long name="last_checked_updates" value="1794096434852" />
+    <int name="last_known_map_zoom" value="12" />
+    <string name="previous_installed_version">OsmAnd~ 4.7.10</string>
+    <boolean name="map_linked_to_location" value="false" />
+    <string name="external_storage_dir_V19">/mnt/sdcard/Android/data/net.osmand.plus/files</string>
+    <long name="last_map_activity_paused_time" value="1794096846219" />
+    <long name="agps_data_downloaded" value="0" />
+    <boolean name="native_rendering_failed_init" value="false" />
+    <string name="last_used_application_mode">default</string>
+    <boolean name="map_activity_enabled" value="false" />
+    <string name="user_android_id">c72227d5-8512-419b-8c96-713334835bc3</string>
+    <float name="last_known_map_zoom_float_part" value="0.0" />
+    <float name="last_known_map_lon" value="-8.007642" />
+</map>

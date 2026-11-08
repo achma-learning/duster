@@ -1,0 +1,2 @@
+/system/bin/sh: cat: C:/Program: No such file or directory
+/system/bin/sh: cat: Files/Git/sdcard/daciaclock.txt: No such file or directory

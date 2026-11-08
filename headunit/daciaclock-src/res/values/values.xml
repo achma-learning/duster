@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dacia</string>
+    <color name="dacia_bg">#ff0c0e0f</color>
+    <style name="DaciaTheme" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/dacia_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

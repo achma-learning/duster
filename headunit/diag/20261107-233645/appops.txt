@@ -1,0 +1,3 @@
+SYSTEM_ALERT_WINDOW: default; rejectTime=+16m45s338ms ago
+READ_EXTERNAL_STORAGE: allow; time=+16m47s788ms ago
+WRITE_EXTERNAL_STORAGE: allow; time=+16m47s788ms ago

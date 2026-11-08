@@ -1,0 +1,3 @@
+--------- beginning of crash
+--------- beginning of system
+--------- beginning of main

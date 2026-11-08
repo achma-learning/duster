@@ -1,0 +1,334 @@
+ACTIVITY MANAGER ACTIVITIES (dumpsys activity activities)
+Display #0 (activities from top to bottom):
+  Stack #917:
+    Task id #969
+    * TaskRecord{61e6baf #969 I=com.android.settings/.Settings$WifiSettingsActivity U=0 sz=2}
+      userId=0 effectiveUid=1000 mCallingUid=u0a7 mCallingPackage=com.android.systemui
+      intent={act=android.settings.WIFI_SETTINGS flg=0x14000000 cmp=com.android.settings/.Settings$WifiSettingsActivity}
+      realActivity=com.android.settings/.Settings$WifiSettingsActivity
+      autoRemoveRecents=false isPersistable=true numFullscreen=2 taskType=0 mTaskToReturnTo=1
+      rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{bceb10e u0 com.android.settings/.Settings$WifiSettingsActivity t969}, ActivityRecord{5ead087 u0 com.android.settings/.SubSettings t969}]
+      askedCompatMode=false inRecents=true isAvailable=true
+      lastThumbnail=android.graphics.Bitmap@81d5bbc lastThumbnailFile=/data/system/recent_images/969_task_thumbnail.png
+      stackId=917
+      hasBeenVisible=true mResizeable=false firstActiveTime=1794090937688 lastActiveTime=1794090937688 (inactive for 77s)
+      * Hist #1: ActivityRecord{5ead087 u0 com.android.settings/.SubSettings t969}
+          packageName=com.android.settings processName=com.android.settings
+          launchedFromUid=1000 launchedFromPackage=com.android.settings userId=0
+          app=ProcessRecord{d8b6e82 23002:com.android.settings/1000}
+          Intent { act=android.intent.action.MAIN cmp=com.android.settings/.SubSettings (has extras) }
+          frontOfTask=false task=TaskRecord{61e6baf #969 I=com.android.settings/.Settings$WifiSettingsActivity U=0 sz=2}
+          taskAffinity=com.android.settings
+          realActivity=com.android.settings/.SubSettings
+          baseDir=/system/app/K2001M_NWD_GB_Carkit_Settings/K2001M_NWD_GB_Carkit_Settings.apk
+          dataDir=/data/user/0/com.android.settings
+          stateNotNeeded=false componentSpecified=true mActivityType=0
+          compat={160dpi always-compat} labelRes=0x7f0b0175 icon=0x7f030000 theme=0x7f120048
+          config={1.0 ?mcc?mnc fr_FR ldltr sw600dp w1024dp h552dp 160dpi lrg long land finger -keyb/v/h -nav/h s.4}
+          stackConfigOverride={1.0 ?mcc?mnc ?locale ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/?}
+          resultTo=ActivityRecord{bceb10e u0 com.android.settings/.Settings$WifiSettingsActivity t969} resultWho=android:fragment:0 resultCode=0
+          taskDescription: iconFilename=null label="null" color=ff263238
+          launchFailed=false launchCount=1 lastLaunchTime=-1m17s525ms
+          haveState=false icicle=null
+          state=RESUMED stopped=false delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=true sleeping=false idle=true
+          fullscreen=true noDisplay=false immersive=false launchMode=0
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=APPLICATION_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=true lastVisibleTime=-1m16s894ms
+      * Hist #0: ActivityRecord{bceb10e u0 com.android.settings/.Settings$WifiSettingsActivity t969}
+          packageName=com.android.settings processName=com.android.settings
+          launchedFromUid=10007 launchedFromPackage=com.android.systemui userId=0
+          app=null
+          Intent { act=android.settings.WIFI_SETTINGS flg=0x14000000 cmp=com.android.settings/.Settings$WifiSettingsActivity }
+          frontOfTask=true task=TaskRecord{61e6baf #969 I=com.android.settings/.Settings$WifiSettingsActivity U=0 sz=2}
+          taskAffinity=null
+          realActivity=com.android.settings/.Settings$WifiSettingsActivity
+          baseDir=/system/app/K2001M_NWD_GB_Carkit_Settings/K2001M_NWD_GB_Carkit_Settings.apk
+          dataDir=/data/user/0/com.android.settings
+          stateNotNeeded=false componentSpecified=false mActivityType=0
+          compat={160dpi always-compat} labelRes=0x7f0b029f icon=0x7f030000 theme=0x7f120048
+          config={1.0 ?mcc?mnc fr_FR ldltr sw600dp w1024dp h552dp 160dpi lrg long land finger -keyb/v/h -nav/h s.4}
+          stackConfigOverride={1.0 ?mcc?mnc ?locale ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/?}
+          taskDescription: iconFilename=null label="null" color=ff263238
+          launchFailed=false launchCount=0 lastLaunchTime=-2m52s449ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=3176]
+          state=DESTROYED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true
+          fullscreen=true noDisplay=false immersive=false launchMode=0
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=APPLICATION_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=false lastVisibleTime=-2m52s22ms
+    Task id #967
+    * TaskRecord{5db8745 #967 A=ma.aymane.daciaclock U=0 sz=1}
+      userId=0 effectiveUid=u0a66 mCallingUid=u0a37 mCallingPackage=com.android.launcher
+      affinity=ma.aymane.daciaclock
+      intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ma.aymane.daciaclock/.ClockActivity}
+      realActivity=ma.aymane.daciaclock/.ClockActivity
+      autoRemoveRecents=false isPersistable=true numFullscreen=1 taskType=0 mTaskToReturnTo=1
+      rootWasReset=true mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{e3dc502 u0 ma.aymane.daciaclock/.ClockActivity t967}]
+      askedCompatMode=false inRecents=true isAvailable=true
+      lastThumbnail=android.graphics.Bitmap@60dce9a lastThumbnailFile=/data/system/recent_images/967_task_thumbnail.png
+      stackId=917
+      hasBeenVisible=true mResizeable=false firstActiveTime=1794090416562 lastActiveTime=1794090416562 (inactive for 598s)
+      * Hist #0: ActivityRecord{e3dc502 u0 ma.aymane.daciaclock/.ClockActivity t967}
+          packageName=ma.aymane.daciaclock processName=ma.aymane.daciaclock
+          launchedFromUid=10037 launchedFromPackage=com.android.launcher userId=0
+          app=null
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ma.aymane.daciaclock/.ClockActivity bnds=[233,425][408,600] }
+          frontOfTask=true task=TaskRecord{5db8745 #967 A=ma.aymane.daciaclock U=0 sz=1}
+          taskAffinity=ma.aymane.daciaclock
+          realActivity=ma.aymane.daciaclock/.ClockActivity
+          baseDir=/data/app/ma.aymane.daciaclock-1/base.apk
+          dataDir=/data/user/0/ma.aymane.daciaclock
+          stateNotNeeded=false componentSpecified=true mActivityType=0
+          compat={160dpi always-compat} labelRes=0x7f050000 icon=0x7f020000 theme=0x7f060000
+          config={1.0 ?mcc?mnc fr_FR ldltr sw600dp w1024dp h552dp 160dpi lrg long land finger -keyb/v/h -nav/h s.4}
+          stackConfigOverride={1.0 ?mcc?mnc ?locale ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/?}
+          taskDescription: iconFilename=null label="null" color=ffe6e6e6
+          launchFailed=false launchCount=0 lastLaunchTime=-16m50s130ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=196]
+          state=DESTROYED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true
+          fullscreen=true noDisplay=false immersive=false launchMode=2
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=APPLICATION_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=false lastVisibleTime=-16m47s502ms
+    Task id #966
+    * TaskRecord{df013cb #966 A=com.android.settings U=0 sz=3}
+      userId=0 effectiveUid=1000 mCallingUid=u0a7 mCallingPackage=com.android.systemui
+      affinity=com.android.settings
+      intent={act=android.settings.SETTINGS flg=0x10200000 cmp=com.android.settings/.Settings}
+      realActivity=com.android.settings/.Settings
+      autoRemoveRecents=false isPersistable=true numFullscreen=3 taskType=0 mTaskToReturnTo=1
+      rootWasReset=true mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{1c1589 u0 com.android.settings/.Settings t966}, ActivityRecord{4443367 u0 com.android.settings/.SubSettings t966}, ActivityRecord{cad4ef3 u0 com.android.settings/.SubSettings t966}]
+      askedCompatMode=false inRecents=true isAvailable=true
+      lastThumbnail=android.graphics.Bitmap@f4277a8 lastThumbnailFile=/data/system/recent_images/966_task_thumbnail.png
+      stackId=917
+      hasBeenVisible=true mResizeable=false firstActiveTime=1794090001472 lastActiveTime=1794090001472 (inactive for 1013s)
+      * Hist #2: ActivityRecord{cad4ef3 u0 com.android.settings/.SubSettings t966}
+          packageName=com.android.settings processName=com.android.settings
+          launchedFromUid=1000 launchedFromPackage=com.android.settings userId=0
+          app=null
+          Intent { act=android.intent.action.MAIN cmp=com.android.settings/.SubSettings (has extras) }
+          frontOfTask=false task=TaskRecord{df013cb #966 A=com.android.settings U=0 sz=3}
+          taskAffinity=com.android.settings
+          realActivity=com.android.settings/.SubSettings
+          baseDir=/system/app/K2001M_NWD_GB_Carkit_Settings/K2001M_NWD_GB_Carkit_Settings.apk
+          dataDir=/data/user/0/com.android.settings
+          stateNotNeeded=false componentSpecified=true mActivityType=0
+          compat={160dpi always-compat} labelRes=0x7f0b0175 icon=0x7f030000 theme=0x7f120048
+          config={1.0 ?mcc?mnc fr_FR ldltr sw600dp w1024dp h552dp 160dpi lrg long land finger -keyb/v/h -nav/h s.4}
+          stackConfigOverride={1.0 ?mcc?mnc ?locale ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/?}
+          taskDescription: iconFilename=null label="null" color=ff263238
+          launchFailed=false launchCount=0 lastLaunchTime=-17m37s718ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=9456]
+          state=DESTROYED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true
+          fullscreen=true noDisplay=false immersive=false launchMode=0
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=APPLICATION_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=false lastVisibleTime=-17m36s706ms
+      * Hist #1: ActivityRecord{4443367 u0 com.android.settings/.SubSettings t966}
+          packageName=com.android.settings processName=com.android.settings
+          launchedFromUid=1000 launchedFromPackage=com.android.settings userId=0
+          app=null
+          Intent { act=android.intent.action.MAIN cmp=com.android.settings/.SubSettings (has extras) }
+          frontOfTask=false task=TaskRecord{df013cb #966 A=com.android.settings U=0 sz=3}
+          taskAffinity=com.android.settings
+          realActivity=com.android.settings/.SubSettings
+          baseDir=/system/app/K2001M_NWD_GB_Carkit_Settings/K2001M_NWD_GB_Carkit_Settings.apk
+          dataDir=/data/user/0/com.android.settings
+          stateNotNeeded=false componentSpecified=true mActivityType=0
+          compat={160dpi always-compat} labelRes=0x7f0b0175 icon=0x7f030000 theme=0x7f120048
+          config={1.0 ?mcc?mnc fr_FR ldltr sw600dp w1024dp h552dp 160dpi lrg long land finger -keyb/v/h -nav/h s.4}
+          stackConfigOverride={1.0 ?mcc?mnc ?locale ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/?}
+          taskDescription: iconFilename=null label="null" color=ff263238
+          launchFailed=false launchCount=0 lastLaunchTime=-17m40s75ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=3272]
+          state=DESTROYED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true
+          fullscreen=true noDisplay=false immersive=false launchMode=0
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=APPLICATION_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=false lastVisibleTime=-17m39s109ms
+      * Hist #0: ActivityRecord{1c1589 u0 com.android.settings/.Settings t966}
+          packageName=com.android.settings processName=com.android.settings
+          launchedFromUid=10007 launchedFromPackage=com.android.systemui userId=0
+          app=null
+          Intent { act=android.settings.SETTINGS flg=0x10200000 cmp=com.android.settings/.Settings }
+          frontOfTask=true task=TaskRecord{df013cb #966 A=com.android.settings U=0 sz=3}
+          taskAffinity=com.android.settings
+          realActivity=com.android.settings/.Settings
+          baseDir=/system/app/K2001M_NWD_GB_Carkit_Settings/K2001M_NWD_GB_Carkit_Settings.apk
+          dataDir=/data/user/0/com.android.settings
+          stateNotNeeded=false componentSpecified=false mActivityType=0
+          compat={160dpi always-compat} labelRes=0x7f0b0176 icon=0x7f030000 theme=0x7f120048
+          config={1.0 ?mcc?mnc fr_FR ldltr sw600dp w1024dp h552dp 160dpi lrg long land finger -keyb/v/h -nav/h s.4}
+          stackConfigOverride={1.0 ?mcc?mnc ?locale ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/?}
+          taskDescription: iconFilename=null label="null" color=ff263238
+          launchFailed=false launchCount=0 lastLaunchTime=-17m56s66ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=4544]
+          state=DESTROYED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true
+          fullscreen=true noDisplay=false immersive=false launchMode=2
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=APPLICATION_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=false lastVisibleTime=-17m43s517ms
+    Task id #968
+    * TaskRecord{3b252c1 #968 A=ma.aymane.dusterpdf U=0 sz=2}
+      userId=0 effectiveUid=u0a69 mCallingUid=u0a37 mCallingPackage=com.android.launcher
+      affinity=ma.aymane.dusterpdf
+      intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ma.aymane.dusterpdf/.HomeActivity}
+      realActivity=ma.aymane.dusterpdf/.HomeActivity
+      autoRemoveRecents=false isPersistable=true numFullscreen=2 taskType=0 mTaskToReturnTo=1
+      rootWasReset=true mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{cc48474 u0 ma.aymane.dusterpdf/.HomeActivity t968}, ActivityRecord{5a58809 u0 ma.aymane.dusterpdf/.ReaderActivity t968}]
+      askedCompatMode=false inRecents=true isAvailable=true
+      lastThumbnail=null lastThumbnailFile=/data/system/recent_images/968_task_thumbnail.png
+      stackId=917
+      hasBeenVisible=true mResizeable=false firstActiveTime=1794089813040 lastActiveTime=1794089813040 (inactive for 1202s)
+      * Hist #1: ActivityRecord{5a58809 u0 ma.aymane.dusterpdf/.ReaderActivity t968}
+          packageName=ma.aymane.dusterpdf processName=ma.aymane.dusterpdf
+          launchedFromUid=10069 launchedFromPackage=ma.aymane.dusterpdf userId=0
+          app=null
+          Intent { cmp=ma.aymane.dusterpdf/.ReaderActivity (has extras) }
+          frontOfTask=false task=TaskRecord{3b252c1 #968 A=ma.aymane.dusterpdf U=0 sz=2}
+          taskAffinity=ma.aymane.dusterpdf
+          realActivity=ma.aymane.dusterpdf/.ReaderActivity
+          baseDir=/data/app/ma.aymane.dusterpdf-1/base.apk
+          dataDir=/data/user/0/ma.aymane.dusterpdf
+          stateNotNeeded=false componentSpecified=true mActivityType=0
+          compat={160dpi always-compat} labelRes=0x7f050000 icon=0x7f030000 theme=0x7f060000
+          config={1.0 ?mcc?mnc fr_FR ldltr sw600dp w1024dp h552dp 160dpi lrg long land finger -keyb/v/h -nav/h s.4}
+          stackConfigOverride={1.0 ?mcc?mnc ?locale ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/?}
+          taskDescription: iconFilename=null label="null" color=ffe6e6e6
+          launchFailed=false launchCount=0 lastLaunchTime=-20m26s908ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=196]
+          state=DESTROYED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true
+          fullscreen=true noDisplay=false immersive=false launchMode=0
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=APPLICATION_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=false lastVisibleTime=-20m20s874ms
+      * Hist #0: ActivityRecord{cc48474 u0 ma.aymane.dusterpdf/.HomeActivity t968}
+          packageName=ma.aymane.dusterpdf processName=ma.aymane.dusterpdf
+          launchedFromUid=10037 launchedFromPackage=com.android.launcher userId=0
+          app=null
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ma.aymane.dusterpdf/.HomeActivity }
+          frontOfTask=true task=TaskRecord{3b252c1 #968 A=ma.aymane.dusterpdf U=0 sz=2}
+          taskAffinity=ma.aymane.dusterpdf
+          realActivity=ma.aymane.dusterpdf/.HomeActivity
+          baseDir=/data/app/ma.aymane.dusterpdf-1/base.apk
+          dataDir=/data/user/0/ma.aymane.dusterpdf
+          stateNotNeeded=false componentSpecified=true mActivityType=0
+          compat={160dpi always-compat} labelRes=0x7f050000 icon=0x7f030000 theme=0x7f060000
+          config={1.0 ?mcc?mnc fr_FR ldltr sw600dp w1024dp h552dp 160dpi lrg long land finger -keyb/v/h -nav/h s.4}
+          stackConfigOverride={1.0 ?mcc?mnc ?locale ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/?}
+          taskDescription: iconFilename=null label="null" color=ffe6e6e6
+          launchFailed=false launchCount=0 lastLaunchTime=-20m30s776ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=196]
+          state=DESTROYED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true
+          fullscreen=true noDisplay=false immersive=false launchMode=0
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=APPLICATION_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=false lastVisibleTime=-20m29s418ms
+
+    Running activities (most recent first):
+      TaskRecord{61e6baf #969 I=com.android.settings/.Settings$WifiSettingsActivity U=0 sz=2}
+        Run #0: ActivityRecord{5ead087 u0 com.android.settings/.SubSettings t969}
+
+    mResumedActivity: ActivityRecord{5ead087 u0 com.android.settings/.SubSettings t969}
+    mLastPausedActivity: ActivityRecord{bceb10e u0 com.android.settings/.Settings$WifiSettingsActivity t969}
+
+  Stack #0:
+    Task id #3
+    * TaskRecord{37009f8 #3 A=com.android.launcher U=0 sz=1}
+      userId=0 effectiveUid=u0a37 mCallingUid=1000 mCallingPackage=android
+      affinity=com.android.launcher
+      intent={act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10800000 pkg=com.android.launcher cmp=com.android.launcher/com.android.launcher2.Launcher}
+      realActivity=com.android.launcher/com.android.launcher2.Launcher
+      autoRemoveRecents=false isPersistable=false numFullscreen=1 taskType=1 mTaskToReturnTo=1
+      rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{a0fb352 u0 com.android.launcher/com.android.launcher2.Launcher t3}]
+      askedCompatMode=false inRecents=true isAvailable=true
+      lastThumbnail=null lastThumbnailFile=/data/system/recent_images/3_task_thumbnail.png
+      stackId=0
+      hasBeenVisible=true mResizeable=false firstActiveTime=1794090424660 lastActiveTime=1794090424660 (inactive for 591s)
+      * Hist #0: ActivityRecord{a0fb352 u0 com.android.launcher/com.android.launcher2.Launcher t3}
+          packageName=com.android.launcher processName=com.android.launcher
+          launchedFromUid=0 launchedFromPackage=null userId=0
+          app=null
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10800000 pkg=com.android.launcher cmp=com.android.launcher/com.android.launcher2.Launcher }
+          frontOfTask=true task=TaskRecord{37009f8 #3 A=com.android.launcher U=0 sz=1}
+          taskAffinity=com.android.launcher
+          realActivity=com.android.launcher/com.android.launcher2.Launcher
+          baseDir=/system/app/K1201Z001_NWD_GB_Carkit_Launcher_4.2/K1201Z001_NWD_GB_Carkit_Launcher_4.2.apk
+          dataDir=/data/user/0/com.android.launcher
+          stateNotNeeded=true componentSpecified=false mActivityType=1
+          compat={160dpi always-compat} labelRes=0x7f0d0000 icon=0x7f030001 theme=0x7f0e0001
+          config={1.0 ?mcc?mnc fr_FR ldltr sw600dp w1024dp h552dp 160dpi lrg long land finger -keyb/v/h -nav/h s.4}
+          stackConfigOverride={1.0 ?mcc?mnc ?locale ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/?}
+          taskDescription: iconFilename=null label="null" color=ffe6e6e6
+          launchFailed=false launchCount=0 lastLaunchTime=-9m59s303ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=7536]
+          state=DESTROYED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true
+          fullscreen=true noDisplay=false immersive=false launchMode=2
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=HOME_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=false lastVisibleTime=-9m58s625ms
+
+    Task id #6
+    * TaskRecord{78dfed1 #6 A=com.android.systemui U=0 sz=1}
+      userId=0 effectiveUid=u0a7 mCallingUid=u0a7 mCallingPackage=com.android.systemui
+      affinity=com.android.systemui
+      intent={act=com.android.systemui.recents.SHOW_RECENTS flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity bnds=[269,376][756,863]}
+      realActivity=com.android.systemui/.recents.RecentsActivity
+      autoRemoveRecents=false isPersistable=false numFullscreen=1 taskType=2 mTaskToReturnTo=1
+      rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{43ba123 u0 com.android.systemui/.recents.RecentsActivity t6}]
+      askedCompatMode=false inRecents=true isAvailable=true
+      lastThumbnail=null lastThumbnailFile=/data/system/recent_images/6_task_thumbnail.png
+      stackId=0
+      hasBeenVisible=true mResizeable=false firstActiveTime=1794089746580 lastActiveTime=1794089746580 (inactive for 1269s)
+      * Hist #0: ActivityRecord{43ba123 u0 com.android.systemui/.recents.RecentsActivity t6}
+          packageName=com.android.systemui processName=com.android.systemui
+          launchedFromUid=10007 launchedFromPackage=com.android.systemui userId=0
+          app=null
+          Intent { act=com.android.systemui.recents.SHOW_RECENTS flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity bnds=[269,376][756,863] }
+          frontOfTask=true task=TaskRecord{78dfed1 #6 A=com.android.systemui U=0 sz=1}
+          taskAffinity=com.android.systemui
+          realActivity=com.android.systemui/.recents.RecentsActivity
+          baseDir=/system/priv-app/SystemUI/SystemUI.apk
+          dataDir=/data/user/0/com.android.systemui
+          stateNotNeeded=true componentSpecified=true mActivityType=2
+          compat={160dpi always-compat} labelRes=0x7f0a00ed icon=0x7f0200db theme=0x7f0e0003
+          config={1.0 ?mcc?mnc fr_FR ldltr sw600dp w1024dp h552dp 160dpi lrg long land finger -keyb/v/h -nav/h s.4}
+          stackConfigOverride={1.0 ?mcc?mnc ?locale ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/?}
+          taskDescription: iconFilename=null label="null" color=fff5f5f5
+          launchFailed=false launchCount=0 lastLaunchTime=-4d4h2m47s386ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=1184]
+          state=DESTROYED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true
+          fullscreen=true noDisplay=false immersive=false launchMode=3
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=RECENTS_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=false lastVisibleTime=-21m10s721ms
+
+    mLastPausedActivity: ActivityRecord{a0fb352 u0 com.android.launcher/com.android.launcher2.Launcher t3}
+Display #1 (activities from top to bottom):
+
+  mFocusedActivity: ActivityRecord{5ead087 u0 com.android.settings/.SubSettings t969}
+  mFocusedStack=ActivityStack{a6a3a66 stackId=917, 4 tasks} mLastFocusedStack=ActivityStack{a6a3a66 stackId=917, 4 tasks}
+  mSleepTimeout=false
+  mCurTaskId=971
+  mUserStackInFront={}
+  mActivityContainers={0=ActivtyContainer{0}A, 917=ActivtyContainer{917}A}
+  mLockTaskModeState=NONE mLockTaskPackages (userId:packages)=
+    0:[]
+ mLockTaskModeTasks[]
