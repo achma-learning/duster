@@ -33,19 +33,19 @@ Pulled files → laptop `scratchpad/rom-pull/` (temporary) — **copy to a perma
 
 Nothing has been committed or pushed yet.
 **Owner decision 2026-11-08: push the findings tomorrow morning, personal data included** (Carlytics reports, network names
-etc. stay in). Owner decision (same day): push **everything**, including the signing key (`headunit/keys/`), vendor dumps (`headunit/rom-dump/`) and raw logs (`headunit/diag/`) — public repo, risk accepted.
+etc. stay in). Owner decision (same day): push **everything**, including the signing key (`apps/dacia-clock/keys/`), vendor dumps (`headunit/rom-dump/`) and raw logs (`headunit/diag/`) — public repo, risk accepted.
 Before pushing:
 
 - [ ] Back up `keys/dacia-v17.jks` + `keys/dacia-v17.pass` **outside** the repo (USB stick / cloud). Never commit them (`keys/` is git-ignored).
-- [ ] Check `duster/carlytics/*.pdf` and `duster/Carlytics Report*.pdf` for VIN / plate / personal data before pushing them publicly.
+- [x] ~~Check Carlytics PDFs for personal data~~ — owner chose to publish everything (`car/carlytics/`).
 - [ ] Remove personal data from the docs if the repo stays public: hotspot names (`YASSER`, `DESKTOP-7JKU08S 6911`), its password, home router name.
 - [ ] Add to the repo (suggested layout):
   - `apk/DaciaClock-v17.apk` — current clock (opens only over the home screen, tap to leave, reverse-aware)
   - `apk/clock-auto-3min.apk` — v16, old behaviour (opens every 3 min, even over apps)
-  - `daciaclock-src/` — v17 source + `build.sh` + README (exclude `daciaclock-src/build/`)
+  - `apps/dacia-clock/source/` — v17 source + `build.sh` + README (build/ ignored)
   - `docs/DEVICE-PROFILE.md`, `docs/DACIACLOCK-V16-ANALYSIS.md`
   - `docs/HEADUNIT-GUIDE.md` — new guide from this session (see below)
-  - `fix-reverse.md`
+  - `docs/FIX-REVERSE.md`
   - `scripts/` (diag, acc-cycle, reverse-props, set-idle)
 - [ ] Write `docs/HEADUNIT-GUIDE.md` covering:
   - ADB over Wi-Fi: unit is root on port 5555; laptop hotspot works, home router isolates clients
@@ -59,7 +59,7 @@ Before pushing:
 - [ ] Commit from `duster/` on a branch, push, open a PR (or push to main if you prefer).
 
 ## Still open on the unit
-- [ ] Reverse camera not triggered — see `fix-reverse.md` (test with engine running first).
+- [ ] Reverse camera not triggered — see `docs/FIX-REVERSE.md` (test with engine running first).
 - [ ] Re-test ignition-on clock launch with v17.1.
 - [ ] GPS outdoor test.
 - [ ] On the head unit, forget the laptop hotspot `DESKTOP-7JKU08S 6911` once the phone hotspot is the daily network.
