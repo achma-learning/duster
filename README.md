@@ -15,6 +15,7 @@ Files, apps and know-how for a **2016 Dacia Duster** (mk1 phase 2, 1.5 dCi) and 
 | [`headunit/`](headunit/) | Everything about the head unit: intelligence report, ROM analysis, change log, reverse-camera notes, ADB scripts, tools, raw dumps/logs |
 | [`car/manuals/`](car/manuals/) | Official Duster owner's manuals (all generations) — source in [`car/manuals/readme.md`](car/manuals/readme.md) |
 | [`car/carlytics/`](car/carlytics/) | Vehicle history reports (Carlytics) |
+| [`car/mods-duster.md`](car/mods-duster.md) | Mods & upgrades guide for Morocco: maintenance, Michelin tyres, sump guard, lights, heat/dust/piste kit, dashcam, Temu buy/avoid list |
 | [`assets/logo/`](assets/logo/) · [`assets/wallpaper/`](assets/wallpaper/) | Dacia / Renault / Duster logos, country flags, head-unit wallpapers |
 | [`docs/prompts/`](docs/prompts/) | Prompts used with AI assistants (e.g. the one that regenerates `CONTEXT.md`) |
 
@@ -22,6 +23,9 @@ Files, apps and know-how for a **2016 Dacia Duster** (mk1 phase 2, 1.5 dCi) and 
 - Intelligence report: [`headunit/docs/HEADUNIT-INTEL.md`](headunit/docs/HEADUNIT-INTEL.md)
 - Connect & install: [`headunit/START-HERE.md`](headunit/START-HERE.md)
 - Reverse camera: [`headunit/docs/FIX-REVERSE.md`](headunit/docs/FIX-REVERSE.md) · to-do / exploration plan: [`headunit/TODO.md`](headunit/TODO.md)
+
+## Car mods
+- Morocco-optimised mods guide (4x2, 1.5 dCi): [`car/mods-duster.md`](car/mods-duster.md)
 
 ## Downloads elsewhere
 - Manual APK mirror: https://archive.org/download/manuel-duster/Manuel%20Duster.apk
