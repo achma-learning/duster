@@ -1,0 +1,6 @@
+# keep scripts runnable in bash on any OS
+*.sh text eol=lf
+*.py text eol=lf
+*.apk binary
+*.png binary
+*.pdf binary

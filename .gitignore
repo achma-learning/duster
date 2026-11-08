@@ -1,0 +1,8 @@
+# never commit signing keys or vendor dumps
+keys/
+*.jks
+*.pass
+rom-dump/
+diag/
+.hu-ip
+headunit/daciaclock-src/build/
