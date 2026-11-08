@@ -1,8 +1,2 @@
-# never commit signing keys or vendor dumps
-keys/
-*.jks
-*.pass
-rom-dump/
-diag/
-.hu-ip
+# headunit/daciaclock-src build output only - keys, rom-dump and diag ARE committed on purpose (owner decision 2026-11-08)
 headunit/daciaclock-src/build/

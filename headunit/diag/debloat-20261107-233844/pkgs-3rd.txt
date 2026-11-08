@@ -1,0 +1,6 @@
+package:com.google.android.apps.mapslite
+package:com.navngo.igo.javaclient
+package:com.videoplayer.arcplayer
+package:org.schabi.newpipe
+package:ma.aymane.dusterpdf
+package:ma.aymane.daciaclock

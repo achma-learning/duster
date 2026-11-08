@@ -1,0 +1,4 @@
+navigation_packagename=ma.aymane.daciaclock
+navigation_classname=ma.aymane.daciaclock.ClockActivity
+arm_auto_start_navi_when_acc_on=1
+whitelist_packagename=[com.android.browser,ma.aymane.daciaclock]

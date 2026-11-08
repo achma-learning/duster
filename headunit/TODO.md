@@ -33,8 +33,7 @@ Pulled files → laptop `scratchpad/rom-pull/` (temporary) — **copy to a perma
 
 Nothing has been committed or pushed yet.
 **Owner decision 2026-11-08: push the findings tomorrow morning, personal data included** (Carlytics reports, network names
-etc. stay in). Still never push the signing key (`keys/`) — that is a security item, not privacy: with it anyone could publish
-a fake "Dacia Clock" update that installs over the real one. Also keep `rom-dump/` (82 MB vendor binaries) out of git.
+etc. stay in). Owner decision (same day): push **everything**, including the signing key (`headunit/keys/`), vendor dumps (`headunit/rom-dump/`) and raw logs (`headunit/diag/`) — public repo, risk accepted.
 Before pushing:
 
 - [ ] Back up `keys/dacia-v17.jks` + `keys/dacia-v17.pass` **outside** the repo (USB stick / cloud). Never commit them (`keys/` is git-ignored).

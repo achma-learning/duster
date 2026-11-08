@@ -18,8 +18,8 @@ _Last synced: 2026-11-08 @ c486f3e (+ branch `headunit-findings`)_
   `adb connect <unit-ip>:5555` and `adb install -r headunit/apk/DaciaClock-v17.apk`.
 - **Build Dacia Clock from source (Windows, Git Bash):** install JDK 17 + Android SDK `platforms;android-23` and
   `build-tools;34.0.0` (`headunit/daciaclock-src/README.md`), then `./headunit/daciaclock-src/build.sh`.
-  Output goes to `headunit/apk/DaciaClock-v17.apk`; the signing key is expected in `headunit/keys/`
-  (`dacia-v17.jks` + `.pass`, never in git — a missing key makes `build.sh` create a NEW one, which forces an uninstall).
+  Output goes to `headunit/apk/DaciaClock-v17.apk`; signed with `headunit/keys/dacia-v17.jks` (password in
+  `dacia-v17.pass`) — both committed on purpose. If they go missing, `build.sh` silently creates a NEW key, which forces an uninstall.
 - **Build / deploy:** no CI, no hosting. "Deploy" = `adb install` to the car.
 - **Required env vars:** none. `build.sh` optionally reads `JAVA_HOME`, `ANDROID_SDK` (`build.sh:7-8`).
 
@@ -52,6 +52,9 @@ _Last synced: 2026-11-08 @ c486f3e (+ branch `headunit-findings`)_
 - `headunit/scripts/*.sh` — ADB helpers (`diag.sh` read-only snapshot, `acc-cycle.sh`, `reverse-props.sh`, `set-idle.sh`).
 - `headunit/tools/` — `apkcheck.py` (is an APK compatible with the unit?), `axmldump.py`, `oat2dex.py`.
 - `headunit/decompiled-v16/` — approximate decompile of v16, kept for reference only.
+- `headunit/rom-dump/` — vendor APKs/ODEX pulled from the unit (backcar, CAN, kernel, settings service, OneKeyClear,
+  services.odex) + extracted `services-dex/` — input for JADX/REA. `headunit/diag/` — raw device snapshots and logs
+  (getprop, settings, logcat, OsmAnd prefs backups, reverse tests).
 - `duster-manuel.html` — the offline 4-language car manual app (source of `DusterManual.apk`, `ma.aymane.dustermanual`).
 - Root `DaciaClock.apk` (v16), `DusterManual.apk`, `DusterPdf-1.apk` (`ma.aymane.dusterpdf`) — linked from `README.md`, keep.
 - `manuals/`, `logo/`, `wallpaper/`, `carlytics/` — assets and the owner's vehicle reports.
@@ -65,7 +68,9 @@ _Last synced: 2026-11-08 @ c486f3e (+ branch `headunit-findings`)_
   at install), `armeabi-v7a` only, keep `android:hardwareAccelerated="false"` for the WebView clock.
 - **HTML/JS for the unit:** ES5 only (`var`, `function`), no CSS variables / grid / `clamp()`, prefix flexbox `-webkit-`,
   animate only `transform`/`opacity`, embed fonts/images, no network (`DEVICE-PROFILE.md` §5).
-- **Never commit** `keys/`, `*.jks`, `*.pass` (signing key), `rom-dump/` (vendor binaries), `diag/` (raw logs) — see `.gitignore`.
+- **Keys, ROM dumps and logs are committed on purpose** (owner decision 2026-11-08, repo is public): `headunit/keys/`,
+  `headunit/rom-dump/`, `headunit/diag/`. Don't remove or regenerate the key; don't "clean them up". Anyone can see the key,
+  so only install Dacia Clock APKs built from this repo.
 - **Never declare `CATEGORY_HOME`**, never draw a visible `SYSTEM_ALERT_WINDOW` overlay, never write a reverse-camera app.
 - Bump `versionCode` for every Dacia Clock release; sign with the same `dacia-v17.jks` or users must uninstall first.
 
@@ -82,7 +87,7 @@ _Last synced: 2026-11-08 @ c486f3e (+ branch `headunit-findings`)_
   Android stack cannot start. **Never probe phone port 5277 before connecting** — AA treats the probe as a car and hangs.
 - **Foreground detection:** if usage access is missing, `Foreground.current()` returns null and the clock never opens
   (fails safe). After reinstalling, re-run `appops set ma.aymane.daciaclock GET_USAGE_STATS allow`.
-- **Signing key:** v16's key is lost; v17 uses a new key in `keys/` (local only). Losing it again = uninstall/reinstall dance.
+- **Signing key:** v16's key is lost; v17 uses `headunit/keys/dacia-v17.jks` (alias `dacia`). Losing it again = uninstall/reinstall dance.
 - **ODEX'd ROM:** system APKs keep intact `classes.dex`, but `services.jar` exists only as ART-quickened `services.odex`
   (`headunit/tools/oat2dex.py` repairs headers; some methods decompile badly).
 - **Windows + Git Bash:** `MSYS_NO_PATHCONV=1` or `/sdcard/...` arguments get mangled; Java tools need `E:/...` paths (`build.sh` uses `pwd -W`).

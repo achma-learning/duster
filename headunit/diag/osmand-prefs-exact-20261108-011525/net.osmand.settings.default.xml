@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="nrenderer_appMode">default</string>
+    <string name="nrenderer_baseAppMode">default</string>
+    <float name="OsmAnd (online tiles)_param_step" value="0.0" />
+    <float name="OsmAnd (online tiles)_param_max" value="0.0" />
+    <float name="last_known_map_rotation" value="0.0" />
+    <float name="OsmAnd (online tiles)_param_min" value="0.0" />
+    <float name="last_known_map_elevation" value="90.0" />
+    <boolean name="first_map_is_downloaded" value="true" />
+    <string name="voice_provider">ar-tts</string>
+</map>
